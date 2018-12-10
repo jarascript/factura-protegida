@@ -1,0 +1,154 @@
+body
+{
+	font-family: 'Raleway';
+	color:#465665;
+}
+
+.background-alt
+{
+	background: #F5F7F7;
+}
+
+nav #logo
+{
+	width:140px;
+}
+
+.navbar-nav a
+{
+	color:#175084;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.btn-contratanos
+{
+	background-color: #4ABEC3;
+	border-radius:30px;
+	color:#fff !important;
+	font-weight: 600;
+}
+
+.navbar-light.navbar-toggler 
+{
+    border-color: rgba(0,0,0,.1);
+}
+
+#main
+{
+	background-image: url('../assets/img/cover_home@2x.png');
+	background-size: cover;
+	max-height: 600px;
+	height:574px;
+	margin-top:-48px;
+}
+
+#main h2
+{
+	font-size:80px;
+	font-weight: 800;
+	margin-top:93px;
+	line-height: 60px;
+}
+
+#main h3
+{
+	font-size:33px;
+	font-weight: 400;
+	line-height: 60px;
+	border-bottom: 2px solid #4ABEC3;
+}
+
+#main p
+{
+	font-size:21px;
+	line-height: 25px;
+	padding-bottom: 1rem;
+}
+
+#main .row
+{
+	padding:10px;
+}
+
+form #mail-contratanos
+{
+	border-radius:30px;
+	font-weight: 600;
+}
+
+
+#como-funciona .row:nth-child(2) img
+{
+	width:100px;
+}
+
+#panel-deudores img
+{
+	width:55%;
+}
+
+footer 
+{
+	background: #194479;
+	font-size:14px;
+}
+
+footer h4
+{
+	color: #fff;
+}
+
+footer p, footer a
+{
+	color:#98C1E6;
+}
+
+footer img
+{
+	width:140px;
+}
+
+footer ul
+{
+	padding-inline-start: 0;
+	margin-block-start: 0;
+}
+
+footer ul li
+{
+	list-style: none;
+}
+
+.text-copyright p
+{
+	font-size:14px;
+}
+
+#copyright
+{
+	background: #0D1924;
+	width: 116%;
+    margin-left: -8%;
+    margin-top:1rem;
+}
+
+#copyright p
+{
+	color:#fff;
+}
+
+#copyright a
+{
+	color: #5381C3;
+}
+
+@media screen and (max-width: 768px) {
+
+
+footer
+{
+	text-align:center !important;
+}
+
+}
