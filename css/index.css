@@ -1,150 +1,296 @@
-body
+/* General */
+	body
+	{
+		font-family: 'Raleway';
+		color:#465665;
+	}
+
+	p
+	{
+		font-family: 'Muli', sans-serif;
+	}
+	
+	.background-alt
+	{
+		background: #F5F7F7;
+	}
+
+	.alerta
+	{
+		color:#D12B5E;
+		font-weight: 600;
+	}
+
+	.destacado
+	{
+		color:#30B788;
+		font-weight: 600;
+	}
+
+	.destacado-2
+	{
+		color:#5381C3;
+		font-weight: 600;
+	}
+
+	.strong
+	{
+		font-weight: 600;
+	}
+
+	.btn-factura
+	{
+		background: #175084;
+		color:#fff;
+		border-radius:25px;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 18px;
+		max-width: 170px;
+		max-height: 50px;
+	}
+
+	.btn.mail
+	{
+		background: #fff;
+		border-radius: 25px;
+		max-width:275px;
+		color:#000;
+		border:#707070;
+	}
+
+	.form-cta .offset-lg-3
+	{
+		margin-left:29%;
+	}
+
+	.form-cta .offset-lg-1
+	{
+		margin-left: -6%;
+	}
+
+/* Header */
+	nav #logo
+	{
+		width:140px;
+	}
+
+	.navbar-nav a
+	{
+		color:#175084;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.btn-contratanos
+	{
+		background-color: #4ABEC3;
+		border-radius:30px;
+		color:#fff !important;
+		font-weight: 600;
+	}
+
+	.navbar-light.navbar-toggler 
+	{
+	    border-color: rgba(0,0,0,.1);
+	}
+
+/* Cover */
+	#main
+	{
+		background-image: url('../assets/img/cover_home@2x.png');
+		background-size: cover;
+		max-height: 600px;
+		height:574px;
+		margin-top:-48px;
+	}
+
+	#main h2
+	{
+		font-size:80px;
+		font-weight: 800;
+		margin-top:93px;
+		line-height: 60px;
+	}
+
+	#main h3
+	{
+		font-size:33px;
+		font-weight: 400;
+		line-height: 60px;
+		border-bottom: 2px solid #4ABEC3;
+	}
+
+	#main p
+	{
+		font-size:21px;
+		line-height: 25px;
+		padding-bottom: 1rem;
+	}
+
+	#main .row
+	{
+		padding:10px;
+	}
+
+	form #mail-contratanos
+	{
+		border-radius:30px;
+		font-weight: 600;
+	}
+
+/* Cómo funciona */
+
+	#como-funciona .row:nth-child(2) img
+	{
+		width:100px;
+	}
+
+	#panel-deudores img
+	{
+		width:55%;
+	}
+
+/* Panel */
+
+	#panel-deudores
+	{
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+
+/*El proceso */
+
+	.proceso h3
+	{
+		font-weight: 800;
+		font-size: 36px;
+	}
+	
+	a.list-group-item
+	{
+		font-size:22px;
+	}
+
+	a.list-group-item.active
+	{
+		background-color:#6C76C7;
+		border-color: #6C76C7; 
+	}
+
+	a.list-group-item span
+	{
+		padding: 1px 11px;
+		border-radius: 100%;
+		background: #fcfcfc;
+		color:#6C76C7;
+		font-weight: 600;
+		font-size:30px;
+	}
+	
+	.proceso .contenido-etapas
+	{
+		background: #fff;
+		border-radius:13px;
+		padding:2.5rem;
+	}
+
+	.tab-content .tab-pane p
+	{
+		font-size:21px;
+	}
+
+/* Call to Action */
+.call-to-action 
 {
-	font-family: 'Raleway';
-	color:#465665;
+	background-image: url('../assets/img/Contrata Factura Protegida@2x.png');
+	background-size: 110%;
+    background-position-x: 59%;
 }
 
-.background-alt
+.call-to-action .container-fluid .gap
 {
-	background: #F5F7F7;
+	min-height: 36vw;
 }
 
-nav #logo
+.call-to-action h3
 {
-	width:140px;
+	font-size:2.25rem;
 }
+/* Footer */
+	footer 
+	{
+		background: #194479;
+		font-size:14px;
+	}
 
-.navbar-nav a
-{
-	color:#175084;
-	font-size: 15px;
-	font-weight: bold;
-}
+	footer h4
+	{
+		color: #fff;
+	}
 
-.btn-contratanos
-{
-	background-color: #4ABEC3;
-	border-radius:30px;
-	color:#fff !important;
-	font-weight: 600;
-}
+	footer p, footer a
+	{
+		color:#98C1E6;
+	}
 
-.navbar-light.navbar-toggler 
-{
-    border-color: rgba(0,0,0,.1);
-}
+	footer img
+	{
+		width:140px;
+	}
 
-#main
-{
-	background-image: url('../assets/img/cover_home@2x.png');
-	background-size: cover;
-	max-height: 600px;
-	height:574px;
-	margin-top:-48px;
-}
+	footer ul
+	{
+		padding-inline-start: 0;
+		margin-block-start: 0;
+	}
 
-#main h2
-{
-	font-size:80px;
-	font-weight: 800;
-	margin-top:93px;
-	line-height: 60px;
-}
+	footer ul li
+	{
+		list-style: none;
+	}
 
-#main h3
-{
-	font-size:33px;
-	font-weight: 400;
-	line-height: 60px;
-	border-bottom: 2px solid #4ABEC3;
-}
+	.text-copyright p
+	{
+		font-size:14px;
+	}
+	/*
+	#copyright
+	{
+		background: #0D1924;
+		width: 116%;
+	    margin-left: -8%;
+	    margin-top:1rem;
+	}
+	*/
+	#copyright p
+	{
+		color:#fff;
+	}
 
-#main p
-{
-	font-size:21px;
-	line-height: 25px;
-	padding-bottom: 1rem;
-}
-
-#main .row
-{
-	padding:10px;
-}
-
-form #mail-contratanos
-{
-	border-radius:30px;
-	font-weight: 600;
-}
-
-
-#como-funciona .row:nth-child(2) img
-{
-	width:100px;
-}
-
-#panel-deudores img
-{
-	width:55%;
-}
-
-footer 
-{
-	background: #194479;
-	font-size:14px;
-}
-
-footer h4
-{
-	color: #fff;
-}
-
-footer p, footer a
-{
-	color:#98C1E6;
-}
-
-footer img
-{
-	width:140px;
-}
-
-footer ul
-{
-	padding-inline-start: 0;
-	margin-block-start: 0;
-}
-
-footer ul li
-{
-	list-style: none;
-}
-
-.text-copyright p
-{
-	font-size:14px;
-}
-
-#copyright
-{
-	background: #0D1924;
-	width: 116%;
-    margin-left: -8%;
-    margin-top:1rem;
-}
-
-#copyright p
-{
-	color:#fff;
-}
-
-#copyright a
-{
-	color: #5381C3;
-}
+	#copyright a
+	{
+		color: #5381C3;
+	}
 
 @media screen and (max-width: 768px) {
 
+.call-to-action
+{
+background-image: url('../assets/img/Contrata Factura Protegida Mobile@2x.png');
+background-position-x: 50%;
+}
+
+
+#main h2
+{
+	font-size:62px;
+}
+h3
+{
+	font-size:8vw;
+	font-weight: 800;
+}
 
 footer
 {
@@ -152,3 +298,12 @@ footer
 }
 
 }
+
+@media screen and (min-width: 768px) {
+
+.list-group
+	{
+		width:400px;
+	}
+}
+
