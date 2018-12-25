@@ -77,7 +77,6 @@
 		padding:2.5rem;
 	}
 
-
 /* Header */
 
 	nav #logo
@@ -145,7 +144,6 @@
 		text-align: center;
 	}
 
-
 /* Cover */
 	#main
 	{
@@ -159,7 +157,7 @@
 	#main h2
 	{
 		font-size:80px;
-		font-weight: 800;
+		font-weight: 900;
 		margin-top:93px;
 		line-height: 60px;
 	}
@@ -222,13 +220,13 @@
 	
 	#como-funciona .linea
 	{
-		width:440px;
+		width:125%;
 		border:#4ABEC3 1px solid;
 	}
 
 	#como-funciona .linea:nth-child(1)
 	{
-		width:450px;
+		width:120%;
 	}
 
 
@@ -275,7 +273,7 @@
 		margin-bottom: 5rem;
 	}
 
-/*El proceso */
+/* El proceso */
 
 	.proceso h3, #como-funciona h3
 	{
@@ -311,22 +309,22 @@
 	}
 
 /* Call to Action */
-.call-to-action 
-{
-	background-image: url('../assets/img/Contrata Factura Protegida@2x.png');
-	background-size: 110%;
-    background-position-x: 59%;
-}
+	.call-to-action 
+	{
+		background-image: url('../assets/img/Contrata Factura Protegida@2x.png');
+		background-size: 110%;
+	    background-position-x: 59%;
+	}
 
-.call-to-action .container-fluid .gap
-{
-	min-height: 32vw;
-}
+	.call-to-action .container-fluid .gap
+	{
+		min-height: 32vw;
+	}
 
-.call-to-action h3
-{
-	font-size:2.25rem;
-}
+	.call-to-action h3
+	{
+		font-size:2.25rem;
+	}
 /* Footer */
 	footer 
 	{
@@ -337,6 +335,7 @@
 	footer h4
 	{
 		color: #fff;
+		font-weight: 700;
 	}
 
 	footer p, footer a
@@ -373,9 +372,21 @@
 	    margin-top:1rem;
 	}
 	*/
+
+	#copyright
+	{
+		background: #0D1924;
+	}
+
+	#copyright .row
+	{
+		margin:0;
+	}
+
 	#copyright p
 	{
 		color:#fff;
+		font-size: 14px;
 	}
 
 	#copyright a
@@ -383,34 +394,181 @@
 		color: #5381C3;
 	}
 
+/* R E S P O N S I V E */
+
 @media screen and (max-width: 768px) {
+	
+	nav li.active 
+	{
+	    width: 40%;
+	}
 
-.call-to-action
-{
-background-image: url('../assets/img/Contrata Factura Protegida Mobile@2x.png');
-background-position-x: 50%;
-}
+	nav li.contratanos 
+	{
+	    margin-right: 10px;
+	    margin: 15px 0;
+	}
 
+	nav.p-3
+	{
+		padding: 1rem !important;
+	}
 
-#main h2
-{
-	font-size:62px;
-}
-h3
-{
-	font-size:8vw;
-	font-weight: 800;
-}
+	#main .pt-4
+	{
+		padding-top: 0 !important; 
+	}
+	
+	
 
-footer
-{
-	text-align:center !important;
-}
+/* Cover */
+	#main .row
+	{
+		padding: 8px;
+	}
+
+	#main h2
+	{
+		font-size:60px;
+		line-height: 25px;
+	}
+
+	#main h3
+	{
+		font-size:22px;
+		line-height: 50px;
+	}
+
+	#main p
+	{
+		font-weight: 300;
+	}
+
+	form #contratanos
+	{
+		margin-left: 0;
+	}
+/* Cómo funciona */
+
+	#como-funciona h3, .proceso h3
+	{
+		font-size:32px;
+	}
+	#como-funciona .linea:nth-child(1)
+	{
+		width:100%;
+	}
+
+	#como-funciona .btn-factura
+	{
+		margin-left:-15%;
+	}
+/* Sistema */
+	.sistema h4 
+	{
+    	font-size: 28px;
+    	line-height: 36px;
+    } 
+
+    .sistema .container-text p 
+    {
+	    font-size: 19px;
+	    line-height: 29px;
+	}
+
+	.sistema img 
+	{
+    	width: 45%;
+	}
+
+	.sistema img:nth-child(1)
+	{
+	    float: right;
+	    margin-bottom: 40px;
+	    margin-top: 7%;
+	}
+/* Panel Deudores */
+	#panel-deudores p.h3
+	{
+		font-size:1.6rem;
+	}
+
+	#panel-deudores img 
+	{
+    	width: 95%;
+	}
+/* El proceso */
+	#el-proceso a.list-group-item
+	{
+    	font-size: 18px;
+	}
+	
+	#el-proceso a.list-group-item span
+	{
+		font-size:25px;
+	}
+
+	#el-proceso .tab-content .tab-pane p
+	{
+		font-size:19px;
+	}
+/* Call to action */
+
+	.call-to-action
+	{
+		background-image: url('../assets/img/Contrata Factura Protegida Mobile@2x.png');
+		background-position-x: 50%;
+		background-position-y: 100%;
+    	background-repeat-y: no-repeat;
+    	background-size: 115%;
+	}
+
+	.call-to-action h3
+	{
+		font-size:1.6rem;
+		font-weight: 700;
+	}
+
+	.call-to-action .pt-4 h3 
+	{
+		margin-bottom: 20%;
+	}
+
+	.call-to-action .h5
+	{
+		font-size:1.15rem;
+	}
+
+	.form-cta .offset-lg-3, .form-cta .offset-lg-1
+	{
+		margin-left: 0;
+	}
+
+	h3
+	{
+		font-size:8vw;
+		font-weight: 800;
+	}
+
+	footer
+	{
+		text-align:center !important;
+	}
+
+	.extra-bold
+	{
+		font-weight: 900;
+	}
 
 }
 
 @media screen and (min-width: 768px) {
 
+
+.br-mobile
+{
+	display: none;
+}
 .list-group
 	{
 		width:400px;
