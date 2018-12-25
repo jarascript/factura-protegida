@@ -12,38 +12,41 @@
 	
     <title>Factura Protegida</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
   	<!-- Menú -->
-  	<header>
-  		<div class="container">
-  			<nav class="navbar navbar-expand-lg bg-white p-3 mb-5 rounded"> <!--shadow-sm-->
+
+  			<nav id="header"class="navbar sticky-top navbar-expand-lg bg-white p-3 mb-5 rounded"> <!--shadow-sm-->
+  				<div class="container">
 			  <a class="navbar-brand" href="#"><img id="logo" src="assets/img/Logo_Factura_Protegida.png" alt="Logo Factura Protegida"></a>
-			  <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
-			  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			  <div class="collapse navbar-collapse" id="navbar">
 			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase">
 			      <li class="nav-item active">
 			        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Qué Hacemos</a>
+			        <a class="nav-link" href="#como-funciona">Cómo funciona</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">El proceso</a>
+			        <a class="nav-link" href="#que-hacemos">Qué hacemos</a>
 			      </li>
 			      <li class="nav-item">
+			        <a class="nav-link" href="#el-proceso">El proceso</a>
+			      </li>
+			      <li class="nav-item contratanos">
 			        <a class="nav-link btn btn-contratanos" href="#">Contrátanos</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Iniciar Sesión</a>
+			        <a class="nav-link btn-login" href="#">Iniciar Sesión</a>
 			      </li>
 			    </ul>
 			  </div>
+			  </div>
 			</nav>
-  		</div>
-  	</header>
+  
   	<!-- /Menú -->
 
 	<!-- Cover -->
@@ -62,10 +65,10 @@
 					<form action="">
 						<div class="form-row">
 							<div class="form-group col-8 col-lg-6">
-								<input id="mail-contratanos" type="mail" class="form-control btn text-left shadow-sm" placeholder="Ingresa tu email">
+								<input id="mail-contratanos" type="mail" class="form-control btn text-left shadow" placeholder="Ingresa tu email">
 							</div>
 							<div class="form-group col-8 col-lg-6">
-								<button class="btn btn-contratanos col-6">Contrátanos</button>
+								<button id="contratanos" class="btn btn-contratanos shadow col-6">Contrátanos</button>
 							</div>
 						</div>
 					</form>					
@@ -109,7 +112,7 @@
 					<div class="linea"></div>
 				</div>
 				<div class="col-2 offset-1 text-center">
-					<button class="btn btn-factura">Saber más</button>
+					<a href="#que-hacemos" class="btn btn-factura">Saber más</a>
 				</div>
 				<div class="col-4 text-center">
 					<div class="linea"></div>
@@ -120,7 +123,7 @@
 	<!-- /¿Cómo funciona? -->
 
 	<!--Somos un sistema -->
-	<section class="pb-4 pt-4 background-alt sistema">
+	<section class="pb-4 pt-4 background-alt sistema" id="que-hacemos">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-8 container-text">
@@ -160,7 +163,7 @@
 	<!-- /Panel -->
 
 	<!-- El proceso -->
-	<section class="pb-4 pt-4 background-alt proceso">
+	<section class="pb-4 pt-4 background-alt proceso" id="el-proceso">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col text-uppercase">
@@ -238,10 +241,10 @@
 					<form class="form-cta" action="">
 							<div class="form-row">
 								<div class="form-group col-6 offset-sm-3 col-lg-3 offset-lg-3">
-									<input type="mail" class="form-control btn btn-outline-light text-center mail strong" placeholder="Ingresa tu email">
+									<input type="mail" class="form-control btn btn-outline-light text-center mail strong shadow" placeholder="Ingresa tu email">
 								</div>
 								<div class="form-group col-6 offset-sm-3 col-lg-3 offset-lg-1">
-									<button class="btn btn-factura col-6">Contrátanos</button>
+									<button class="btn btn-factura col-6 shadow">Contrátanos</button>
 								</div>
 							</div>
 						</form>
@@ -309,5 +312,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
