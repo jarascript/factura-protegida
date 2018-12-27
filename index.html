@@ -37,7 +37,7 @@
 			        <a class="nav-link" href="#el-proceso">El proceso</a>
 			      </li>
 			      <li class="nav-item contratanos">
-			        <a class="nav-link btn btn-contratanos" href="#">Contrátanos</a>
+			        <a class="nav-link btn btn-contratanos" href="#" data-toggle="modal" data-target="#modalContratanos">Contrátanos</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link btn-login" href="#">Iniciar Sesión</a>
@@ -68,7 +68,7 @@
 								<input id="mail-contratanos" type="mail" class="form-control btn text-left shadow" placeholder="Ingresa tu email">
 							</div>
 							<div class="form-group col-8 col-lg-6">
-								<button id="contratanos" class="btn btn-contratanos shadow col-6">Contrátanos</button>
+								<a id="contratanos" class="btn btn-contratanos shadow col-6" data-toggle="modal" data-target="#modalContratanos">Contrátanos</a>
 							</div>
 						</div>
 					</form>					
@@ -244,7 +244,7 @@
 									<input type="mail" class="form-control btn btn-outline-light text-center mail strong shadow" placeholder="Ingresa tu email">
 								</div>
 								<div class="form-group col-12 offset-sm-3 col-lg-3 offset-lg-1">
-									<button class="btn btn-factura col-6 shadow">Contrátanos</button>
+									<a class="btn btn-factura col-6 shadow" data-toggle="modal" data-target="#modalContratanos">Contrátanos</a>
 								</div>
 							</div>
 						</form>
@@ -308,6 +308,44 @@
     	 		</div>
     	 	</div>
     </section>
+
+    <!-- Modal -->
+		<div class="modal fade" id="modalContratanos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		        <h5 class="modal-title h4 strong" id="ModalTitle">¡Bienvenido a Factura Protegida!</h5>
+		        <p>Empecemos con tus datos personales</p>
+		        <img src="assets/icons/step-1@2x.png" alt="Paso 1 - Contratar Factura Protegida">
+		      </div>
+		      <div class="modal-body">
+		        <form>
+				  <div class="form-row">
+				    <div class="col p-2">
+				      <input type="text" class="form-control" placeholder="Nombre">
+				    </div>
+				    <div class="col p-2">
+				      <input type="text" class="form-control" placeholder="Apellido">
+				    </div>
+				  </div>
+				  <div class="form-row">
+				  	<div class="col pt-3 pl-2 pr-2">
+				  		<input type="email" class="form-control" placeholder="Email">
+				  	</div>
+				  </div>
+				</form>
+				<div class="modal-footer">
+		        	<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+		      	</div>
+				<small class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae arcu ipsum. Nullam vehicula mollis est. Quisque quis sapien urna. Lorem ipsum dolor sit.</small>
+		      </div>		      
+		    </div>
+		  </div>
+		</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -9,6 +9,11 @@
 	{
 		font-family: 'Muli', sans-serif;
 	}
+
+	.contratanos, #contratanos, #btn-contratanos
+	{
+		cursor: pointer !important;
+	}
 	
 
 	.background-alt
@@ -77,6 +82,11 @@
 		padding:2.5rem;
 	}
 
+	.extra-bold
+	{
+		font-weight: 900;
+	}
+
 /* Header */
 
 	nav #logo
@@ -111,7 +121,8 @@
 		background-color: #4ABEC3;
 		border-radius:30px;
 		color:#fff !important;
-		font-weight: 600;
+		font-weight: 800;
+		text-transform: uppercase;
 	}
 
 	nav .btn-contratanos	
@@ -325,6 +336,12 @@
 	{
 		font-size:2.25rem;
 	}
+
+	.call-to-action a.btn-factura
+	{
+		color:#fff;
+		cursor: pointer;
+	}
 /* Footer */
 	footer 
 	{
@@ -392,6 +409,47 @@
 	#copyright a
 	{
 		color: #5381C3;
+	}
+
+/* Modal */ 
+
+	.modal-content
+	{
+		border-radius:12px;
+	}
+
+	.modal-body input
+	{
+		color:#80909E;
+		font-weight: 600;
+		font-size:18px;
+		font-family: 'Raleway';
+	}
+
+	.modal-header
+	{
+		background: #E9EEEE;
+		color:#2C475F;
+		display: block;
+		text-align: center;
+		font-size:19px;
+		border-radius: 12px;
+	}
+
+	.modal-header img
+	{
+		width:180px;
+	}
+	
+	.modal-footer
+	{
+		border-top:0;
+	}
+
+	.modal-footer .btn-contratanos
+	{
+		width: 170px;
+		height: 50px;
 	}
 
 /* R E S P O N S I V E */
@@ -553,11 +611,6 @@
 	footer
 	{
 		text-align:center !important;
-	}
-
-	.extra-bold
-	{
-		font-weight: 900;
 	}
 
 }
