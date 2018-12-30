@@ -422,8 +422,29 @@
 	{
 		color:#80909E;
 		font-weight: 600;
-		font-size:18px;
+		font-size:17px;
 		font-family: 'Raleway';
+	}
+
+	
+	.modal-body .input-group-text
+	{
+		background: #fff;
+	}
+	
+	.modal-body .text-info
+	{
+		color: #6c757d !important;
+	}
+
+	.modal-body .input-group-text, .modal-body .input-group input
+	{
+		border-radius:15px;
+	}
+
+	.modal-body .input-group input
+	{
+		border-left:none;
 	}
 
 	.modal-header
@@ -451,6 +472,7 @@
 		width: 170px;
 		height: 50px;
 	}
+
 
 /* R E S P O N S I V E */
 
@@ -627,4 +649,3 @@
 		width:400px;
 	}
 }
-
