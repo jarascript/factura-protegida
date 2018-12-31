@@ -320,48 +320,224 @@
 		        	</button>
 		        	<h5 class="modal-title h4 strong" id="ModalTitle">¡Bienvenido a Factura Protegida!</h5>
 		        	<p>Empecemos con tus datos personales</p>
-		        	<img src="assets/icons/step-1@2x.png" alt="Paso 1 - Contratar Factura Protegida">
+		        	<!--
+		        	<div class="stepwizard">
+					    <div class="stepwizard-row setup-panel">
+					        <div class="stepwizard-step">
+					            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+					        </div>
+					        <div class="stepwizard-step">
+					            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+					        </div>
+					        <div class="stepwizard-step">
+					            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+					        </div>
+					    </div>
+					</div>
+				-->
 		        </div>
 		        <div class="modal-body">
 		        	<form>
-				    	<div class="form-row">
-				    		<div class="col p-2">
-				      			<div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                                        </div>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-                                    </div>
-				    </div>
-				    <div class="col p-2">
-				      <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                                        </div>
-                                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
-                                    </div>
-				    </div>
-				  </div>
-				  <div class="form-row">
-				  	<div class="col pt-3 pl-2 pr-2">
-				  		<div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                                        </div>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
-                                    </div>
-				  	</div>
-				  </div>
+		        		<!-- STEP 1 -->
+				    	<div class="setup-content" id="step-1">
+				    		<div class="form-row">
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+	                                    </div>
+	                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+	                                </div>
+					    		</div>
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+	                                    </div>
+	                                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+	                                </div>
+					    		</div>
+					  		</div>
+					  		<div class="form-row">
+					  			<div class="col pt-3 pl-2 pr-2">
+					  				<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+	                                    </div>
+	                                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+	                                </div>
+					  			</div>
+					  		</div>
+<!--
+					  		<div class="form-row">
+					  			<div class="col p-4 text-center">
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+					  			</div>
+					  		</div>
+-->
+						</div>
+						<!-- STEP 2 -->
+						<div class="setup-content" id="step-2">
+				    		<div class="form-row">
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-home text-info"></i></div>
+	                                    </div>
+	                                    <input type="text" class="form-control" id="nombre-empresa" name="nombre-empresa" placeholder="Nombre Empresa" required>
+	                                </div>
+					    		</div>
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-home text-info"></i></div>
+	                                    </div>
+	                                    <input type="text" class="form-control" id="rut-empresa" name="rut-empresa" placeholder="Rut Empresa" required>
+	                                </div>
+					    		</div>
+					  		</div>
+					  		<div class="form-row">
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-lock text-info"></i></div>
+	                                    </div>
+	                                    <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+	                                </div>
+					    		</div>
+					    		<div class="col p-2">
+					      			<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-lock text-info"></i></div>
+	                                    </div>
+	                                    <input type="password" class="form-control" id="password-repeat" name="password-repeat" placeholder="Repetir Contraseña" required>
+	                                </div>
+					    		</div>
+					  		</div>
+					  		<div class="form-row">
+					  			<div class="col pt-3 pl-2 pr-2">
+					  				<div class="input-group mb-2">
+	                                    <div class="input-group-prepend">
+	                                        <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
+	                                    </div>
+	                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono de contacto" required>
+	                                </div>
+					  			</div>
+					  		</div>
+<!--
+					  		<div class="form-row">
+					  			<div class="col p-4 text-center">
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+					  			</div>
+					  		</div>
+						</div>
+-->
+						<!-- STEP 3 -->
+<!--						<div class="setup-content" id="step-3">
+				    		<div class="form-row">
+					    		<div class="col p-2">
+					    			<table class="table table-striped">
+									  	<tbody>
+										    <tr>
+										      <th scope="row"><i class="fa fa-user text-info"></i></th>
+										      <td>Nombre</td>
+										      <td>Dato</td>
+										    </tr>
+										    <tr>
+										      <th scope="row"><i class="fa fa-user text-info"></i></th>
+										      <td>Apellido</td>
+										      <td>Dato</td>
+										    </tr>
+										    <tr>
+										      <th scope="row"><i class="fa fa-envelope text-info"></i></th>
+										      <td>E-mail</td>
+										      <td>Dato</td>
+										    </tr>
+										    <tr>
+										      <th scope="row"><i class="fa fa-home text-info"></i></th>
+										      <td>Nombre Empresa</td>
+										      <td>Dato</td>
+										    </tr>
+										    <tr>
+										      <th scope="row"><i class="fa fa-home text-info"></i></th>
+										      <td>Rut Empresa</td>
+										      <td>Dato</td>
+										    </tr>
+										    <tr>
+										      <th scope="row"><i class="fa fa-phone text-info"></i></th>
+										      <td>Teléfono de contacto</td>
+										      <td>Dato</td>
+										    </tr>
+										 </tbody>
+									</table>
+					    		</div>
+					    	</div>
+					    	-->
+					    	<div class="form-row">
+					  			<div class="col p-4 text-center">
+					  				<button type="submit" class="btn btn-contratanos mx-auto shadow">Confirmar</button>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	
 					</form>
+
+					<!-- MOVER EL BOTÓN DEL MODAL FOOTER  -->
+
 				<div class="modal-footer">
-		        	<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+		        	<small class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae arcu ipsum. Nullam vehicula mollis est. Quisque quis sapien urna. Lorem ipsum dolor sit.</small>
 		      	</div>
-				<small class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae arcu ipsum. Nullam vehicula mollis est. Quisque quis sapien urna. Lorem ipsum dolor sit.</small>
 		      </div>		      
 		    </div>
 		  </div>
 		</div>
+	
+	<script>
+		
+		$(document).ready(function () {
 
+    var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
+
+    allWells.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+                $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-primary').addClass('btn-default');
+            $item.addClass('btn-primary');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+
+    allNextBtn.click(function(){
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for(var i=0; i<curInputs.length; i++){
+            if (!curInputs[i].validity.valid){
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('div.setup-panel div a.btn-primary').trigger('click');
+});
+	</script>
 
     <!-- Optional JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
