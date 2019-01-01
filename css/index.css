@@ -278,15 +278,46 @@
 
 /* Panel */
 
-	#panel-deudores
+	#precios
 	{
 		margin-top: 3rem;
 		margin-bottom: 5rem;
 	}
 
+	#precios small
+	{
+		font-size:50%;
+	}
+	
+	#precios ul
+	{
+		border-top: 2px solid #d8d8d8;
+    	padding-top: 1rem;
+	}
+
+	.card-deck .card {
+	  min-width: 220px;
+	}
+
+	.border-top { border-top: 1px solid #e5e5e5; }
+	.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+	.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+	#precios .nav-link
+	{
+		color:#279aa0;
+	}
+
+	.nav-link.active
+	{
+		font-weight: 600;
+	}
+
+
 /* El proceso */
 
-	.proceso h3, #como-funciona h3
+	.proceso h3, #como-funciona h3,  #precios h3
 	{
 		font-weight: 800;
 		font-size: 36px;
@@ -524,6 +555,12 @@
 		  font-size: 12px;
 		  line-height: 1.428571429;
 		  border-radius: 15px;
+		}
+
+
+		#step-2,#step-3
+		{
+			display: block;
 		}
 
 /* R E S P O N S I V E */

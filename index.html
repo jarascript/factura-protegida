@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800|Raleway:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	
+    <script src="js/index.js"></script>
     <title>Factura Protegida</title>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="57">
@@ -57,7 +57,7 @@
 				<div class="col-12 col-lg-6">
 					<h2>DESCANSA,</h2>
 					<h3>Tú <b>vendes</b>, nosotros <b>cobramos</b></h3>
-					<p>Somos un equipo de abogados y asesores.<br/> Protegemos tus cuentas, nosotros cobramos a tus clientes para que puedas optimizar la gestión de tu empresa, ¡y de verdad cobramos! </p>
+					<p>Protegemos tus cuentas, nosotros cobramos a tus clientes para que puedas optimizar la gestión de tu empresa, <b>¡y de verdad cobramos!</b> </p>
 				</div>
 			</div>
 
@@ -146,17 +146,147 @@
 	</section>
 	<!--/Somos un sistema -->
 
-	<!-- Panel -->
-	<section class="pb-4 pt-4" id="panel-deudores">
+	<!-- Precios -->
+	<section class="pb-4 pt-4" id="precios">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col">
-					<p class="h3">Este será tu <span class="extra-bold">panel</span> en donde podrás hacer <span class="extra-bold">seguimiento</span> <br/>al proceso de <span class="extra-bold">cobranza</span> de tus documentos</p>
-				</div>
+					<h3>Precios</h3>
+					<p class="h4 mb-4">Nuestros precios son claros y transparantes</p>
+
+						<!-- Tabs Precios -->
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  	<li class="nav-item">
+						    	<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cobranza Preventiva</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cobranza Pre - Judicial</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Cobranza Judicial</a>
+						  	</li>
+						</ul>
+						<!-- Contenido Precios -->
+						<div class="tab-content" id="myTabContent">
+							<!-- Cobranza Preventiva -->
+						  	<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						  		<div class="container p-4">
+      								<div class="card-deck mb-3 text-center">
+					        			<!-- Tarjeta -->
+					        			<div class="card mb-4 box-shadow">
+					          				<div class="card-header">
+					            				<h4 class="my-0 font-weight-normal">Básico</h4>
+					          				</div>
+					          				<div class="card-body">
+					            				<h1 class="card-title pricing-card-title">1UF <br/><small class="text-muted">+ IVA mensual</small></h1>
+					            				<ul class="list-unstyled mt-3 mb-4">
+					              					<li>0 a 50 documentos</li>
+					            				</ul>
+					          				</div>
+					        			</div>
+					        			<!-- Tarjeta -->
+								        <div class="card mb-4 box-shadow">
+								         	<div class="card-header">
+								            	<h4 class="my-0 font-weight-normal">Medio</h4>
+								          	</div>
+								          	<div class="card-body">
+								            	<h1 class="card-title pricing-card-title">2UF <br/> <small class="text-muted">+ IVA mensual</small></h1>
+								            	<ul class="list-unstyled mt-3 mb-4">
+								              	<li>51 a 150 documentos</li>
+								            	</ul>
+								          	</div>
+								        </div>
+								        <!-- Tarjeta -->
+								        <div class="card mb-4 box-shadow">
+								          	<div class="card-header">
+								            	<h4 class="my-0 font-weight-normal">Full</h4>
+								          	</div>
+								          	<div class="card-body">
+								            	<h1 class="card-title pricing-card-title">3UF <br/> <small class="text-muted">+ IVA mensual</small></h1>
+								            	<ul class="list-unstyled mt-3 mb-4">
+								              		<li>151 a 250 documentos</li>
+								            	</ul>
+								          	</div>
+								        </div>
+								        <!-- Tarjeta -->
+					        			<div class="card mb-4 box-shadow">
+					          				<div class="card-header">
+					            				<h4 class="my-0 font-weight-normal">Personalizado</h4>
+					          				</div>
+					          				<div class="card-body">
+					            				<h1 class="card-title pricing-card-title"> A medida <br/></h1>
+					            				<p class="text-muted pb-3">Evaluamos tu caso</p>
+					            				<ul class="list-unstyled mt-3 mb-4">
+					              					<li>251 documentos y más</li>
+					            				</ul>
+					          				</div>
+					        			</div>
+					      			</div>
+								</div> 
+						  	</div>
+
+						  	<!--Cobranza Prejudicial -->
+						  	<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						  		<div class="container p-4">
+								  	<table class="table table-striped">
+									  	<thead>
+									    	<tr>
+									      		<th scope="col"> </th>
+									      		<th scope="col">Factura Vencida</th>
+									      		<th scope="col">Comisión contra recaudación</th>
+									    	</tr>
+									  	</thead>
+									  	<tbody>
+									    	<tr>
+									      		<th scope="row">1</th>
+									      		<td>Desde 1 a 60 días vencidas</td>
+									      		<td>10%</td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">2</th>
+									      		<td>Desde 61 a 90 días vencidas</td>
+									      		<td>14%</td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">3</th>
+									      		<td>Desde 91 a 120 días vencidas</td>
+									      		<td>16%</td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">4</th>
+									      		<td>Sobre 120 días vencidas</td>
+									      		<td>18%</td>
+									    	</tr>
+									  	</tbody>
+									</table>
+								</div>
+							</div>
+
+							<!-- Cobranza Judicial -->
+						  	<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						  		<div class="container p-4">
+						  			<div class="card-deck mb-3 text-center">
+					        			<!-- Tarjeta -->
+					        			<div class="card mb-4 box-shadow">
+					          				<div class="card-header">
+					            				<h4 class="my-0 font-weight-normal">Cobranza Judicial</h4>
+					          				</div>
+					          				<div class="card-body">
+					            				<h1 class="card-title pricing-card-title">15% <br/><small class="text-muted">Del total recuperado</small></h1>
+					          				</div>
+					        			</div>
+					        		</div>
+						  		</div>
+						  	</div>
+						</div>
+
+					
 			</div>
 			<div class="row">
 				<div class="col">
+					<!--
 					<img src="assets/img/panel-deudores@2x.png" alt="Imagen pc">
+				-->
 				</div>
 			</div>
 		</div>
@@ -173,41 +303,40 @@
 			</div>
 			<div class="row pt-4 pb-4">
 
-			  <div class="col-12 col-lg-5 pb-4">
-			    <div class="list-group" id="list-tab" role="tablist">
-			      <a class="list-group-item list-group-item-action active" id="list-facturas-list" data-toggle="list" href="#list-facturas" role="tab" aria-controls="facturas"><span>1</span> Ingresa tus Facturas</a>
-			      <a class="list-group-item list-group-item-action" id="list-ejecutivo-list" data-toggle="list" href="#list-ejecutivo" role="tab" aria-controls="ejecutivo"><span>2</span> Te Asignamos un Ejecutivo</a>
-			      <a class="list-group-item list-group-item-action" id="list-seguimiento-list" data-toggle="list" href="#list-seguimiento" role="tab" aria-controls="seguimiento"><span>3</span> Recordatorios y Seguimiento</a>
-			      <a class="list-group-item list-group-item-action" id="list-prejudicial-list" data-toggle="list" href="#list-prejudicial" role="tab" aria-controls="prejudicial"><span>4</span> Etapa Pre-judicial</a>
-			      <a class="list-group-item list-group-item-action" id="list-judicial-list" data-toggle="list" href="#list-judicial" role="tab" aria-controls="judicial"><span>5</span> Etapa judicial</a>
-			    </div>
-			  </div>
+			 	<div class="col-12 col-lg-5 pb-4">
+			    	<div class="list-group" id="list-tab" role="tablist">
+			    		<a class="list-group-item list-group-item-action active" id="list-facturas-list" data-toggle="list" href="#list-facturas" role="tab" aria-controls="facturas"><span>1</span> Ingresa tus Documentos</a>
+			      		<a class="list-group-item list-group-item-action" id="list-ejecutivo-list" data-toggle="list" href="#list-ejecutivo" role="tab" aria-controls="ejecutivo"><span>2</span> Te Asignamos un Ejecutivo</a>
+			      		<a class="list-group-item list-group-item-action" id="list-seguimiento-list" data-toggle="list" href="#list-seguimiento" role="tab" aria-controls="seguimiento"><span>3</span> Recordatorios y Seguimiento</a>
+			      		<a class="list-group-item list-group-item-action" id="list-prejudicial-list" data-toggle="list" href="#list-prejudicial" role="tab" aria-controls="prejudicial"><span>4</span> Etapa Pre-judicial</a>
+			      		<a class="list-group-item list-group-item-action" id="list-judicial-list" data-toggle="list" href="#list-judicial" role="tab" aria-controls="judicial"><span>5</span> Etapa judicial</a>
+			    	</div>
+			  	</div>
 
-			  <div class="col-12 col-lg-7 container-text">
-			    <div class="tab-content" id="nav-tabContent">
-			      <div class="tab-pane fade show active" id="list-facturas" role="tabpanel" aria-labelledby="list-facturas-list">
-			      	<p>Con nosotros <span class="destacado">cada factura está protegida</span> porque ponemos a tu disposición un <b>equipo</b> que se encargará de mantener el control de cada documento, cobrándolas de manera <b>preventiva</b>.</p>
-			      	<p>En caso de <span class="alerta">no pago</span>, nuestros abogados ejercerán las <b>acciones legales</b> dentro del plazo que cada uno de nuestros clientes nos indique anticipadamente.</p>
-			      </div>
-			    <div class="tab-pane fade" id="list-ejecutivo" role="tabpanel" aria-labelledby="list-ejecutivo-list"><p>Con nosotros cada cuenta esta protegida porque ponemos a tu disposición un equipo que se encargará de mantener el control de cada factura, cobrándolas de manera preventiva.<br/>
-
-				  En caso de no pago, nuestros abogados ejercerán las acciones legales dentro del plazo que cada uno de nuestros clientes nos indique anticipadamente.</p>
+			  	<div class="col-12 col-lg-7 container-text">
+			    	<div class="tab-content" id="nav-tabContent">
+			      		<div class="tab-pane fade show active" id="list-facturas" role="tabpanel" aria-labelledby="list-facturas-list">
+			      			<p>Dispondrás de un  <b>"escritorio":</b><br/> <br/>En éste podrás ver de forma actualizada el <span class="destacado">estado en que se encuentra cada una de tus cuentas</span> y la gestiones de cobro que se realizan en cada una de ellas.
+			      		</div>
+			    		<div class="tab-pane fade" id="list-ejecutivo" role="tabpanel" aria-labelledby="list-ejecutivo-list">
+			    			<p>Nuestro servicio es <b>personalizado</b>: <br/><br/> Te asignaremos <span class="destacado">un ejecutivo</span> que se encargará de realizar las <b>gestiones de cobro</b> tus documentos, recordándoles a tus clientes, su emisión, vencimientos y <span class="alerta">compromisos de pago</span>.
+							</p>
+						</div>
+			    		<div class="tab-pane fade" id="list-seguimiento" role="tabpanel" aria-labelledby="list-seguimiento-list">
+			      			<p>Tú defines los <b>tiempos</b>:<br/><br/>En nuestra plataforma puedes indicarnos <span class="destacado">los plazos de espera</span> para el pago de tus documentos.
+			      			</p>
+			    		</div>
+			    		<div class="tab-pane fade" id="list-prejudicial" role="tabpanel" aria-labelledby="list-prejudicial-list">
+			      			<p>Haremos todo lo posible por el <b>pago de tus documentos:</b><br/><br/>Una vez que el documento <b>no es pagado</b> dentro de plazo, iniciamos la <span class="alerta">cobranza Pre - judicial</span>, intensificando las gestiones de cobro.
+							</p>
+			    		</div>
+			    		<div class="tab-pane fade" id="list-judicial" role="tabpanel" aria-labelledby="list-judicial-list">
+			      			<p><b>Finalmente:</b><br/><br/>En caso de <span class="alerta">no pago</span> del documento dentro del plazo que indicaste, nuestra <span class="destacado">Área Legal</span> iniciará las <b>gestiones judiciales</b> que correspondan de manera rapida y eficaz, así nunca perderás la oportunidad de <b>declarar la factura como incobrable</b> para efectos tributarios.</p>
+			    		</div>
+			  		</div>
 				</div>
-			    <div class="tab-pane fade" id="list-seguimiento" role="tabpanel" aria-labelledby="list-seguimiento-list">
-			      <p>Con nosotros <span class="destacado">cada factura está protegida</span> porque ponemos a tu disposición un <b>equipo</b> que se encargará de mantener el control de cada documento, cobrándolas de manera <b>preventiva</b>.</p>
-			      	<p>En caso de <span class="alerta">no pago</span>, nuestros abogados ejercerán las <b>acciones legales</b> dentro del plazo que cada uno de nuestros clientes nos indique anticipadamente.</p>
-			    </div>
-			    <div class="tab-pane fade" id="list-prejudicial" role="tabpanel" aria-labelledby="list-prejudicial-list">
-			      <p>Con nosotros <span class="destacado">cada factura está protegida</span> porque ponemos a tu disposición un <b>equipo</b> que se encargará de mantener el control de cada documento, cobrándolas de manera <b>preventiva</b>.</p>
-			    </div>
-			    <div class="tab-pane fade" id="list-judicial" role="tabpanel" aria-labelledby="list-judicial-list">
-			      <p>En caso de <span class="alerta">no pago</span>, nuestros abogados ejercerán las <b>acciones legales</b> dentro del plazo que cada uno de nuestros clientes nos indique anticipadamente.</p>
-			    </div>
-			  </div>
 			</div>
-			</div>
-
-			</div>
+		</div>
 			
 		
 		</div>
@@ -219,8 +348,9 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col pt-4">
-					<h3>¡No enviamos <br class="br-mobile"><span class="destacado-2">correos automáticos</span>!<h3/>
-					<h3>Somos un <span class="destacado-2">grupo humano</span> preocupados de tus cobros</h3>
+					<img src="assets/img/Logo_Factura_Protegida.png" alt="logo Factura Protegida">
+					<h4 class="p-2">¡Tú vendes <br class="br-mobile"><b>nosotros cobramos</b>!<h4/>
+					<!--<h3>Somos un <span class="destacado-2">grupo humano</span> preocupados de tus cobros</h3>-->
 				</div>
 			</div>
 
@@ -232,8 +362,8 @@
 
 			<div class="row cta">
 				<div class="col">
-					<h3 class="strong">Contrata el mejor <br class="br-mobile"/> servicios de cobranza</h3>
-					<p class="h5">Somos un equipo íntegro de abogados</p>
+					<h3 class="strong">Contrata al servicio de cobranza <br class="br-mobile"/> más completo e integral</h3>
+					<p class="h5">Escríbenos y nos pondemos en contacto a la brevedad</p>
 				</div>
 			</div>
 
@@ -261,7 +391,7 @@
     	 	<div class="row">
     	 		<div class="col-12 col-lg-4 pt-4">
     	 			<h4>Nosotros</h4>
-    	 			<p>Somos un integro equipo de abogados preparados para encargarnos de la cobranza de tus facturas. Contrata al mejor servicio hoy y déjalo en nuestras manos.</p>
+    	 			<p>Contáctanos y conoce el nuevo y más completo sistema de cobranza. Contrata al mejor servicio hoy y déjalo en nuestras manos.</p>
     	 		</div>
     	 		<div class="col-12 col-lg-3 pt-4">
     	 			<h4>Sitios de interés</h4>
@@ -285,8 +415,15 @@
     	 			</ul>
     	 		</div>
     	 		<div class="col-12 col-lg-3 pt-4">
-    	 			<h4>Teléfono</h4>
-    	 			<p>contacto@facturaprotegida.cl</p>
+    	 			<h4>Contacto</h4>
+    	 			<ul>
+    	 				<li>
+    	 					<a href="mailto:contacto@facturaprotegida.cl">contacto@facturaprotegida.cl</a>
+    	 				</li>
+    	 				<li>
+    	 					<a href="tel:+56956788371">+56956788371</a>
+    	 				</li>
+    	 			</ul>
     	 		</div>
     	 	</div>
 
@@ -295,13 +432,13 @@
     	 			<img src="assets/img/Logo_Factura_Protegida_Blanco@2x.png" alt="logo Factura Protegida">
     	 		</div>
     	 		<div class="col-12 col-lg-9 pt-2 pr-4 pl-4 pb-4">
-    	 			<p>Copyright © 2018 Factura Protegida S.P.A. <br class="br-mobile">Todos los derechos reservados. <br class="br-mobile"/><a href="#">Términos & Condiciones <span style="color:#fff;">|</span> Política de Privacidad</a></p>
+    	 			<p>Copyright © 2018 Factura Protegida S.P.A. <br class="br-mobile">Todos los derechos reservados | "Asesorías y Management SPA". <!--<br class="br-mobile"/><a href="#">Términos & Condiciones <span style="color:#fff;">|</span> Política de Privacidad</a>--></p>
     	 		</div>
     	 	</div>
     	 </div>
     </footer>
 	<!-- /Footer -->
-
+<!--
 	<section id="copyright">	
 		<div class="row text-center pt-2 pb-2">
     	 		<div class="col">
@@ -309,7 +446,7 @@
     	 		</div>
     	 	</div>
     </section>
-
+-->
     <!-- Modal -->
 		<div class="modal fade" id="modalContratanos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -320,7 +457,7 @@
 		        	</button>
 		        	<h5 class="modal-title h4 strong" id="ModalTitle">¡Bienvenido a Factura Protegida!</h5>
 		        	<p>Empecemos con tus datos personales</p>
-		        	<!--
+		        	
 		        	<div class="stepwizard">
 					    <div class="stepwizard-row setup-panel">
 					        <div class="stepwizard-step">
@@ -334,7 +471,7 @@
 					        </div>
 					    </div>
 					</div>
-				-->
+				
 		        </div>
 		        <div class="modal-body">
 		        	<form>
@@ -368,13 +505,13 @@
 	                                </div>
 					  			</div>
 					  		</div>
-<!--
+
 					  		<div class="form-row">
 					  			<div class="col p-4 text-center">
-					  				<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow" id="next" onclick="nextStepModal()">Siguiente</button>
 					  			</div>
 					  		</div>
--->
+
 						</div>
 						<!-- STEP 2 -->
 						<div class="setup-content" id="step-2">
@@ -424,16 +561,16 @@
 	                                </div>
 					  			</div>
 					  		</div>
-<!--
+
 					  		<div class="form-row">
 					  			<div class="col p-4 text-center">
-					  				<button type="button" class="btn btn-contratanos mx-auto shadow">Siguiente</button>
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow" onclick="finalStepModal()">Siguiente</button>
 					  			</div>
 					  		</div>
 						</div>
--->
+
 						<!-- STEP 3 -->
-<!--						<div class="setup-content" id="step-3">
+					<div class="setup-content" id="step-3">
 				    		<div class="form-row">
 					    		<div class="col p-2">
 					    			<table class="table table-striped">
@@ -472,7 +609,7 @@
 									</table>
 					    		</div>
 					    	</div>
-					    	-->
+					    	
 					    	<div class="form-row">
 					  			<div class="col p-4 text-center">
 					  				<button type="submit" class="btn btn-contratanos mx-auto shadow">Confirmar</button>
@@ -491,60 +628,11 @@
 		    </div>
 		  </div>
 		</div>
-	
-	<script>
-		
-		$(document).ready(function () {
-
-    var navListItems = $('div.setup-panel div a'),
-            allWells = $('.setup-content'),
-            allNextBtn = $('.nextBtn');
-
-    allWells.hide();
-
-    navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-                $item = $(this);
-
-        if (!$item.hasClass('disabled')) {
-            navListItems.removeClass('btn-primary').addClass('btn-default');
-            $item.addClass('btn-primary');
-            allWells.hide();
-            $target.show();
-            $target.find('input:eq(0)').focus();
-        }
-    });
-
-    allNextBtn.click(function(){
-        var curStep = $(this).closest(".setup-content"),
-            curStepBtn = curStep.attr("id"),
-            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-            curInputs = curStep.find("input[type='text'],input[type='url']"),
-            isValid = true;
-
-        $(".form-group").removeClass("has-error");
-        for(var i=0; i<curInputs.length; i++){
-            if (!curInputs[i].validity.valid){
-                isValid = false;
-                $(curInputs[i]).closest(".form-group").addClass("has-error");
-            }
-        }
-
-        if (isValid)
-            nextStepWizard.removeAttr('disabled').trigger('click');
-    });
-
-    $('div.setup-panel div a.btn-primary').trigger('click');
-});
-	</script>
 
     <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>
