@@ -49,6 +49,99 @@
 			</nav>
   
   	<!-- /Menú -->
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Siguiente";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()){
+  	
+	return false;
+  	} 
+
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+
+var nombre = document.getElementById("nombre").value;
+var apellido = document.getElementById("apellido").value;
+var email = document.getElementById("email").value;
+var nombreEmpresa = document.getElementById("nombre-empresa").value;
+var rutEmpresa = document.getElementById("rut-empresa").value;
+var telefono = document.getElementById("telefono").value;
+console.log(nombre)
+document.getElementById("nombreInput").innerHTML = nombre;
+document.getElementById("apellidoInput").innerHTML = apellido;
+document.getElementById("emailInput").innerHTML = email;
+document.getElementById("nombreEmpresaInput").innerHTML = nombreEmpresa;
+document.getElementById("rutEmpresaInput").innerHTML = rutEmpresa;
+document.getElementById("telefonoInput").innerHTML = telefono;
+
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
 
 	<!-- Cover -->
 	<main id="main">
@@ -91,20 +184,22 @@
 			<div class="row pb-4 pt-4 text-center">
 				<div class="col-12 col-lg-4 pb-4">
 					<img src="assets/icons/icono@2x.png" alt="ícono">
-					<h4 class="strong">Trabajo Personalizado</h4>
+					<h4 class="strong">Servicio Personalizado</h4>
 					<p>
-						Al contratarnos un/a ejecutivo/a queda a cargo de atender los requerimientos de cobros de cada uno de los documentos que emitas.
+						Nuestro Escritorio Virtual y equipo de ejecutivos nos permiten entregarte un servicio integral para la gestión de tu cobranza.
 					</p>
-				</div>
-				<div class="col-12 col-lg-4 pb-4">
-					<img src="assets/icons/icono@2x.png" alt="Ícono">
-					<h4 class="strong">Un documento, un caso</h4>
-					<p>Puedes ingresar las facturas a la plataforma por ti mismo o enviarlas a tu ejecutivo/a para su ingreso al sistema.</p>
 				</div>
 				<div class="col-12 col-lg-4 pb-4">
 					<img src="assets/icons/icono@2x.png" alt="Ícono">
 					<h4 class="strong">Tú decides los tiempos</h4>
 					<p>Define cuándo enviar recordatorios de pago y el plazo máximo a esperar antes de llegar una etapa de cobranza judicial.</p>
+				</div>
+				<div class="col-12 col-lg-4 pb-4">
+					<img src="assets/icons/icono@2x.png" alt="Ícono">
+					<h4 class="strong">Cobranza Judicial</h4>
+					<p>Somos la única plataforma de cobranza externa que dispone de una área legal para demandar el pago de las cuentas vencidas y recuperar el dinero de tu empresa.
+
+</p>
 				</div>
 			</div>
 
@@ -456,27 +551,23 @@
 		            <span aria-hidden="true">&times;</span>
 		        	</button>
 		        	<h5 class="modal-title h4 strong" id="ModalTitle">¡Bienvenido a Factura Protegida!</h5>
-		        	<p>Empecemos con tus datos personales</p>
+		        	<p>Por favor, completa tus datos y los de tu empresa</p>
 		        	
-		        	<div class="stepwizard">
-					    <div class="stepwizard-row setup-panel">
-					        <div class="stepwizard-step">
-					            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-					        </div>
-					        <div class="stepwizard-step">
-					            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-					        </div>
-					        <div class="stepwizard-step">
-					            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-					        </div>
-					    </div>
-					</div>
+		        		<div class="row">
+							<div class="col-12">
+								<div style="text-align:center;">
+					  				<span class="step active">1</span>
+								  	<span class="step">2</span>
+								  	<span class="step">3</span> 
+								</div>
+							</div>
+						</div>
 				
 		        </div>
 		        <div class="modal-body">
-		        	<form>
+		        	<form id="regForm">
 		        		<!-- STEP 1 -->
-				    	<div class="setup-content" id="step-1">
+				    	<div class="setup-content tab" style="display:block;" id="step-1">
 				    		<div class="form-row">
 					    		<div class="col p-2">
 					      			<div class="input-group mb-2">
@@ -508,13 +599,13 @@
 
 					  		<div class="form-row">
 					  			<div class="col p-4 text-center">
-					  				<button type="button" class="btn btn-contratanos mx-auto shadow" id="next" onclick="nextStepModal()">Siguiente</button>
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
 					  			</div>
 					  		</div>
 
 						</div>
 						<!-- STEP 2 -->
-						<div class="setup-content" id="step-2">
+						<div class="setup-content tab" style="display:none;" id="step-2">
 				    		<div class="form-row">
 					    		<div class="col p-2">
 					      			<div class="input-group mb-2">
@@ -564,46 +655,47 @@
 
 					  		<div class="form-row">
 					  			<div class="col p-4 text-center">
-					  				<button type="button" class="btn btn-contratanos mx-auto shadow" onclick="finalStepModal()">Siguiente</button>
+					  				<button class="shadow" type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fas fa-angle-left"></i></button>
+					  				<button type="button" class="btn btn-contratanos mx-auto shadow" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
 					  			</div>
 					  		</div>
 						</div>
 
 						<!-- STEP 3 -->
-					<div class="setup-content" id="step-3">
+					<div class="setup-content tab" style="display: none;" id="step-3">
 				    		<div class="form-row">
 					    		<div class="col p-2">
-					    			<table class="table table-striped">
+					    			<table class="table table-striped" id="confirmarDatos">
 									  	<tbody>
 										    <tr>
 										      <th scope="row"><i class="fa fa-user text-info"></i></th>
 										      <td>Nombre</td>
-										      <td>Dato</td>
+										      <td id="nombreInput">Dato</td>
 										    </tr>
 										    <tr>
 										      <th scope="row"><i class="fa fa-user text-info"></i></th>
 										      <td>Apellido</td>
-										      <td>Dato</td>
+										      <td id="apellidoInput">Dato</td>
 										    </tr>
 										    <tr>
 										      <th scope="row"><i class="fa fa-envelope text-info"></i></th>
 										      <td>E-mail</td>
-										      <td>Dato</td>
+										      <td id="emailInput">Dato</td>
 										    </tr>
 										    <tr>
 										      <th scope="row"><i class="fa fa-home text-info"></i></th>
 										      <td>Nombre Empresa</td>
-										      <td>Dato</td>
+										      <td id="nombreEmpresaInput">Dato</td>
 										    </tr>
 										    <tr>
 										      <th scope="row"><i class="fa fa-home text-info"></i></th>
 										      <td>Rut Empresa</td>
-										      <td>Dato</td>
+										      <td id="rutEmpresaInput">Dato</td>
 										    </tr>
 										    <tr>
 										      <th scope="row"><i class="fa fa-phone text-info"></i></th>
 										      <td>Teléfono de contacto</td>
-										      <td>Dato</td>
+										      <td id="telefonoInput">Dato</td>
 										    </tr>
 										 </tbody>
 									</table>
@@ -612,7 +704,8 @@
 					    	
 					    	<div class="form-row">
 					  			<div class="col p-4 text-center">
-					  				<button type="submit" class="btn btn-contratanos mx-auto shadow">Confirmar</button>
+					  				<button class="shadow" type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fas fa-angle-left"></i></button>
+					  				<button type="submit" class="btn btn-contratanos mx-auto shadow">Confirmar Datos</button>
 					  			</div>
 					  		</div>
 					  	</div>
@@ -622,12 +715,21 @@
 					<!-- MOVER EL BOTÓN DEL MODAL FOOTER  -->
 
 				<div class="modal-footer">
-		        	<small class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae arcu ipsum. Nullam vehicula mollis est. Quisque quis sapien urna. Lorem ipsum dolor sit.</small>
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-12">
+								<small class="text-center">Nos contactaremos contigo a partir de estos datos, para que podamos conocer tu caso. Luego te será asignado un ejecutivo.</small>
+							</div>
+						</div>
+					</div>
 		      	</div>
 		      </div>		      
 		    </div>
 		  </div>
 		</div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
